@@ -684,14 +684,15 @@ img {
   cursor: pointer;
 }
 
-.modal__icon {
-  fill: currentColor;
+.modal__button--close:hover .modal__icon--close,
+.modal__button--close:focus .modal__icon--close {
+  fill: var(--accent-color);
   transition: fill 250ms var(--transition-cubic);
 }
 
-.modal__button--close:hover .modal__icon,
-.modal__button--close:focus .modal__icon {
-  fill: var(--accent-color);
+.modal__icon {
+  fill: currentColor;
+  transition: fill 250ms var(--transition-cubic);
 }
 
 .modal__title {

@@ -23,15 +23,16 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
+  &:hover .modal__icon--close,
+  &:focus .modal__icon--close {
+    fill: var(--accent-color);
+    transition: fill 250ms var(--transition-cubic);
+  }
 }
 
 .modal__icon {
   fill: currentColor;
   transition: fill 250ms var(--transition-cubic);
-  .modal__button--close:hover &,
-  .modal__button--close:focus & {
-    fill: var(--accent-color);
-  }
 }
 
 .modal__title {
